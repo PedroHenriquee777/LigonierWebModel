@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ligonier - People are searching for truth. Help them find God’s Word."
+    />
+    <title>Ligonier</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans+Georgian:wght@100..900&display=swap");
+
+      * {
+        font-family: "Noto Sans Georgian", "Eb Garamond", sans;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #ffffff;
+      }
+
+      header {
+        width: 100%;
+        padding: 10px 8%;
+        background: #76968a;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+      }
+
+      header.scrolled {
+        background-color: #ffffff;
+        transition: background-color 0.3s ease;
+        box-shadow: 10px 1px #ffffffc2;
+      }
+
+      header.scrolled .nav-item a,
+      header.scrolled .btn-default {
+        color: #6f843e;
+        border-color: #6f843e;
+      }
+
+      header.scrolled .btn-default:hover {
+        background-color: #f0f0f0;
+        color: #000;
+        border-color: #ccc;
+      }
+
+      .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .header-left {
+        position: relative;
+        right: 100px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .header-right {
+        position: relative;
+        left: 90px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .header-center {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      #nav-list {
+        display: flex;
+        list-style: none;
+        gap: 60px;
+        font-size: 13px;
+      }
+
+      .nav-item a {
+        text-decoration: none;
+        color: white;
+        font-weight: 650;
+      }
+
+      .nav-item a:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+
+      .logoicon {
+        width: 40px;
+        cursor: pointer;
+      }
+
+      .LogoSign {
+        width: 32px;
+        cursor: pointer;
+      }
+
+      .btn-default {
+        margin-right: 18px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 5px 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .btn-default2 {
+        margin-left: 20px;
+        background-color: #ec5628;
+        color: white;
+        border: 2px solid #ec5628;
+        padding: 5px 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        animation: pulse 3s ease-in-out infinite;
+        border-radius: 2px;
+      }
+
+      .btn-default:hover {
+        background-color: rgba(255, 255, 255, 0.363);
+        color: rgba(255, 255, 255, 0.774);
+        border-color: rgba(255, 255, 255, 0.445);
+      }
+      .hero {
+        background: #76968a;
+        padding: 300px 8%;
+        position: relative;
+      }
+
+      .polaroid {
+        top: 120px;
+        position: absolute;
+        left: 320px;
+        bottom: 130px;
+        background: white;
+        width: 305px;
+        height: 350px;
+        display: grid;
+        place-content: center;
+        box-shadow: 5px 5px 15px #111;
+      }
+
+      .polaroid img {
+        position: relative;
+        width: 260px;
+        height: 266px;
+        bottom: 15px;
+      }
+
+      .polaroid-text {
+        position: absolute;
+        left: 720px;
+        bottom: 170px;
+        color: white;
+        max-width: 400px;
+        gap: 100px;
+      }
+
+      .polaroid-text h2 {
+        font-family: "EB Garamond";
+        gap: 100px;
+        font-size: 35px;
+        margin-bottom: 10px;
+        font-weight: 400;
+      }
+
+      .polaroid-text p {
+        margin-bottom: 15px;
+      }
+
+      .btn-polaroid {
+        background: white;
+        border: 2px solid white;
+        color: rgb(0, 0, 0);
+        margin-top: 30px;
+        padding: 4px 22px;
+        font-weight: 400;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .btn-polaroid:hover {
+        color: #76968a;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-left">
+          <button class="btn-default"><strong>MENU</strong></button>
+          <img
+            src="./src/images/tree-svgrepo-com.svg"
+            alt="LigonierIcon"
+            class="logoicon"
+          />
+        </div>
+
+        <nav class="header-center">
+          <ul id="nav-list">
+            <li class="nav-item"><a href="#">TEACHING</a></li>
+            <li class="nav-item"><a href="#">EVENTS</a></li>
+            <li class="nav-item"><a href="#">STORE</a></li>
+            <li class="nav-item"><a href="#">ABOUT</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-right">
+          <img
+            src="./src/images/person-male-svgrepo-com (1).svg"
+            alt="IconSignIn"
+            class="LogoSign"
+          />
+          <button class="btn-default2"><strong>DONATE</strong></button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="polaroid">
+          <img src="./src/images/LigonierImage.jpg" alt="LigonierImage" />
+        </div>
+        <div class="polaroid-text">
+          <h2>
+            People are searching for <br />truth. Help them find <br />God's
+            Word.
+          </h2>
+          <p>Your support is needed by June 30</p>
+          <button class="btn-polaroid">GIVE TODAY</button>
+        </div>
+      </section>
+    </main>
+    <script src="./src/js/script.js"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("scrolled", window.scrollY > 50);
+      });
+    </script>
+  </body>
+</html>
