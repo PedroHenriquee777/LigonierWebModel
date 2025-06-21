@@ -99,5 +99,3 @@ Content inspired by:
 
 This project is licensed under the **MIT License**.
 You’re free to use, modify, and distribute it for non-commercial learning purposes.
-
-```
