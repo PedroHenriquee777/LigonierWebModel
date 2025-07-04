@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ligonier - People are searching for truth. Help them find God’s Word."
+    />
+    <title>Ligonier</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap");
+
+      * {
+        font-family: "Noto Sans Georgian", "EB Garamond", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #ffffff;
+      }
+
+      header {
+        width: 100%;
+        padding: 10px 8%;
+        background: #76968a;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+      }
+
+      header.scrolled {
+        background-color: #ffffff;
+        transition: background-color 0.3s ease;
+        box-shadow: 10px 1px #ffffffc2;
+      }
+
+      header.scrolled .nav-item a,
+      header.scrolled .btn-default,
+      header.scrolled .icon-user {
+        color: #6f843e;
+        border-color: #6f843e;
+      }
+
+      header.scrolled .btn-default:hover {
+        background-color: #f0f0f0;
+        color: #000;
+        border-color: #ccc;
+      }
+
+      .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .header-left {
+        position: relative;
+        right: 100px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .header-right {
+        position: relative;
+        left: 90px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .header-center {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      #nav-list {
+        display: flex;
+        list-style: none;
+        gap: 60px;
+        font-size: 13px;
+      }
+
+      .nav-item a {
+        text-decoration: none;
+        color: white;
+        font-weight: 650;
+      }
+
+      .nav-item a:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+
+      .logoicon {
+        width: 40px;
+        cursor: pointer;
+      }
+
+      .LogoSign {
+        width: 32px;
+        cursor: pointer;
+      }
+
+      .btn-default {
+        margin-right: 18px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 5px 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .btn-default2 {
+        margin-left: 20px;
+        background-color: #ec5628;
+        color: white;
+        border: 2px solid #ec5628;
+        padding: 5px 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        animation: pulse 3s ease-in-out infinite;
+        border-radius: 2px;
+      }
+
+      .btn-default:hover {
+        background-color: rgba(255, 255, 255, 0.363);
+        color: rgba(255, 255, 255, 0.774);
+        border-color: rgba(255, 255, 255, 0.445);
+      }
+
+      .hero {
+        background: #76968a;
+        padding: 300px 8%;
+        position: relative;
+      }
+
+      .polaroid {
+        top: 120px;
+        position: absolute;
+        left: 320px;
+        bottom: 130px;
+        background: white;
+        width: 305px;
+        height: 350px;
+        display: grid;
+        place-content: center;
+        box-shadow: 5px 5px 15px #111;
+      }
+
+      .polaroid img {
+        position: relative;
+        width: 260px;
+        height: 266px;
+        bottom: 15px;
+      }
+
+      .polaroid-text {
+        position: absolute;
+        left: 720px;
+        bottom: 170px;
+        color: white;
+        max-width: 400px;
+        gap: 100px;
+      }
+
+      .polaroid-text h2 {
+        font-family: "EB Garamond";
+        font-size: 35px;
+        margin-bottom: 10px;
+        font-weight: 400;
+      }
+
+      .polaroid-text p {
+        margin-bottom: 15px;
+      }
+
+      .btn-polaroid {
+        background: white;
+        border: 2px solid white;
+        color: rgb(0, 0, 0);
+        margin-top: 30px;
+        padding: 4px 22px;
+        font-weight: 400;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .btn-polaroid:hover {
+        color: #76968a;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .search-section {
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+        background: #ffffff;
+      }
+
+      .search-wrapper {
+        position: relative;
+        width: 400px;
+      }
+
+      .search-input {
+        width: 100%;
+        padding: 14px 50px 14px 20px;
+        border-radius: 999px;
+        border: none;
+        background: rgba(0, 0, 0, 0.03);
+        color: #333;
+        font-size: 16px;
+        outline: none;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+      }
+
+      .search-icon {
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(0, 0, 0, 0.3);
+        font-size: 16px;
+        pointer-events: none;
+      }
+
+      .book-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f2e4;
+        padding: 1px 2%;
+      }
+
+      .book-image {
+        width: 500px;
+        position: relative;
+        height: auto;
+        margin-right: 20px;
+      }
+
+      .book-info {
+        max-width: 500px;
+        margin-right: 200px;
+      }
+
+      .book-info small {
+        text-transform: uppercase;
+        color: #ec6a4e;
+        font-weight: 300;
+      }
+
+      .book-info h1 {
+        font-size: 36px;
+        font-family: "EB Garamond";
+        margin: 10px 0;
+      }
+
+      .book-info .author {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 10px 0;
+        font-size: 15px;
+        color: #555;
+      }
+
+      .book-info .price {
+        margin-top: 16px;
+        position: relative;
+        margin-left: 160px;
+        bottom: 45px;
+        font-size: 14px;
+        color: #555;
+      }
+
+      .book-info .price del {
+        color: #999;
+        margin-right: 10px;
+      }
+
+      .book-info .btn-order {
+        margin-top: 20px;
+        padding: 10px 24px;
+        background-color: #9caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+
+      .book-info .btn-order:hover {
+        background-color: #839641;
+      }
+
+      .featured-section {
+        background-color: #ffffff;
+        padding: 60px 8%;
+      }
+
+      .featured-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #6f843e;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        border-left: 3px solid #6f843e;
+        padding-left: 10px;
+        letter-spacing: 1px;
+      }
+
+      .featured-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 30px;
+      }
+
+      .featured-card {
+        background-color: #fff;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+      }
+
+      .featured-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .featured-card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+      }
+
+      .featured-info {
+        padding: 16px;
+      }
+
+      .featured-info h3 {
+        font-size: 15px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .meta {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 13px;
+        color: #666;
+      }
+
+      .meta img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-left">
+          <button class="btn-default"><strong>MENU</strong></button>
+          <img
+            src="./src/images/tree-svgrepo-com.svg"
+            alt="LigonierIcon"
+            class="logoicon"
+          />
+        </div>
+        <nav class="header-center">
+          <ul id="nav-list">
+            <li class="nav-item"><a href="#">TEACHING</a></li>
+            <li class="nav-item"><a href="#">EVENTS</a></li>
+            <li class="nav-item"><a href="#">STORE</a></li>
+            <li class="nav-item"><a href="#">ABOUT</a></li>
+          </ul>
+        </nav>
+        <div class="header-right">
+          <i class="fa-regular fa-user icon-user" style="color: white"></i>
+          <button class="btn-default2"><strong>DONATE</strong></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="polaroid">
+          <img src="./src/images/LigonierImage.jpg" alt="LigonierImage" />
+        </div>
+        <div class="polaroid-text">
+          <h2>
+            People are searching for <br />truth. Help them find <br />God's
+            Word.
+          </h2>
+          <p>Your support is needed by June 30</p>
+          <button class="btn-polaroid">GIVE TODAY</button>
+        </div>
+      </section>
+
+      <section class="search-section">
+        <div class="search-wrapper">
+          <input type="text" placeholder="Search" class="search-input" />
+          <i class="fa fa-search search-icon"></i>
+        </div>
+      </section>
+
+      <section class="book-section">
+        <img
+          src="./src/images/book.png"
+          alt="Union with Christ Book"
+          class="book-image"
+        />
+        <div class="book-info">
+          <small>Hardcover</small>
+          <h1>Union with Christ</h1>
+          <p>New Book by Sinclair Ferguson</p>
+          <div class="author">
+            <img src="./src/images/sinclair.png" alt="Author" width="24" />
+            Sinclair Ferguson • 163 Pages
+          </div>
+          <button class="btn-order">ORDER TODAY</button>
+          <div class="price"><del>$18.00</del><span>$14.40</span></div>
+        </div>
+      </section>
+      
+      <section class="featured-section">
+        <h2 class="featured-title">Featured</h2>
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="./src/images/feat2.jpg" alt="Quote image" />
+            <div class="featured-info">
+              <h3>Help Equip Christians in the Battle of Ideas</h3>
+              <div class="meta">
+                <img src="./src/images/feat2.jpg" alt="Chris Larson" />
+                <span>Chris Larson</span> • <span>3min</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="featured-card">
+            <img src="./src/images/feat1.jpg" alt="Bible Curriculum" />
+            <div class="featured-info">
+              <h3>New Bible Curriculum for Children: Growing in God’s Word</h3>
+              <div class="meta">
+                <span>Ligonier Updates</span> • <span>2min</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="featured-card">
+            <img src="./src/images/feat3.jpg" alt="Following Jesus" />
+            <div class="featured-info">
+              <h3>
+                Following Jesus: New Teaching Series from W. Robert Godfrey
+              </h3>
+              <div class="meta">
+                <span>Ligonier Updates</span> • <span>2min</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="featured-card">
+            <img src="./src/images/feat4.jpg" alt="National Conference" />
+            <div class="featured-info">
+              <h3>Announcing Our 2026 National Conference</h3>
+              <div class="meta">
+                <span>Ligonier Updates</span> • <span>2min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("scrolled", window.scrollY > 50);
+      });
+    </script>
+  </body>
+</html>
