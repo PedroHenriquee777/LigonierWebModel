@@ -63,3 +63,5 @@
         color: rgba(255, 255, 255, 0.774);
         border-color: rgba(255, 255, 255, 0.445);
       }
+
+      box-shadow: -10px 10px 1px rgba(4, 122, 107, 0.185);  
