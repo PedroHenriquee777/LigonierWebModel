@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <User-info charset="UTF-8" />
-    <User-info
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <User-info
-      name="description"
-      content="Ligonier - People are searching for truth. Help them find God’s Word."
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Ligonier - People are searching for truth. Help them find God’s Word."/>
     <title>Ligonier</title>
     <link rel="stylesheet" href="./src/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -59,9 +53,9 @@
       }
 
       header.scrolled .btn-header:hover {
-        background-color: #f0f0f0;
-        color: #000;
-        border-color: #ccc;
+        background-color: #6f843e10;
+        color: #6f843e;
+        border-color: #6f843e;
       }
 
       .Header-container {
@@ -164,8 +158,9 @@
 
       .polaroid img {
         position: relative;
-        width: 260px;
-        height: 266px;
+        aspect-ratio: 1 / 1;
+        width: 278px;
+        height: 278px;
         bottom: 15px;
       }
 
@@ -464,7 +459,7 @@
         margin: 20px 0;
       }
 
-      .TrendingAndRecent-sectino {
+      .TrendingAndRecent-section {
         display: flex;
         gap: 80px;
         justify-content: space-between;
@@ -516,7 +511,7 @@
       }
 
       @media (max-width: 768px) {
-        .TrendingAndRecent-sectino {
+        .TrendingAndRecent-section {
           flex-direction: column;
         }
 
@@ -733,6 +728,268 @@
         color: #aaa;
         margin-right: 6px;
       }
+
+      .Promo-section {
+        padding: 60px 8%;
+        background: #ffffff;
+      }
+
+      .Promo-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .Promo-card h2 {
+        position: relative;
+        bottom: 60px;
+        right: 120px;
+        padding: 0 0 7px;
+      }
+      .Promo-card p {
+        bottom: 60px;
+        position: relative;
+        right: 120px;
+        padding: 7px 0;
+      }
+
+      .Promo-img img {
+        width: 65%;
+        position: relative;
+        box-shadow: 10px 10px 1px rgba(4, 122, 107, 0.185);
+        margin-bottom: 10px;
+        margin-left: 100px;
+      }
+
+      .Promo-subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        color: #ec5628;
+        margin-bottom: 5px;
+        letter-spacing: 2px;
+      }
+
+      .Promo-title {
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-family: "EB Garamond", serif;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+
+      .Promo-description {
+        font-size: 18px;
+        font-family: "EB Garamond", serif;
+        font-weight: 500;
+        color: #444;
+        margin-bottom: 20px;
+        line-height: 1.8;
+      }
+
+      .Promo-btn {
+        position: relative;
+        padding: 8px 16px;
+        background: #9caf50;
+        border: 1px solid #9caf50;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 13px;
+        transition: 0.3s ease;
+        font-weight: bold;
+        bottom: 50px;
+        right: 120px;
+      }
+
+      .Promo-btn:hover {
+        background-color: #778a2b;
+        color: rgba#778a2b;
+        border-color: rgba#778a2b;
+      }
+
+      .FeaturedEvent-section {
+        background: #ffffff;
+        padding: 60px 8%;
+      }
+
+      .FeaturedEvent-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+      }
+
+      .FeaturedEvent-card {
+        max-width: 500px;
+      }
+
+      .FeaturedEvent-subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        color: #ec5628;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+      }
+
+      .FeaturedEvent-title {
+        font-size: 40px;
+        font-family: "EB Garamond", serif;
+        font-weight: 500;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+      }
+      .FeaturedEvent-title:hover {
+        color: #6f843e;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 6px;
+        cursor: pointer;
+      }
+
+      .FeaturedEvent-avatars {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+      }
+
+      .FeaturedEvent-avatars img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .FeaturedEvent-more {
+        background: #f1f1f1;
+        color: #333;
+        font-size: 12px;
+        padding: 5px 10px;
+        border-radius: 50px;
+      }
+
+      .FeaturedEvent-date {
+        font-size: 17px;
+        font-weight: 400;
+        color: #333;
+        margin-bottom: 25px;
+        font-family: "EB Garamond";
+      }
+
+      .FeaturedEvent-btn {
+        background: #9caf50;
+        border: 1px solid #9caf50;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .FeaturedEvent-btn:hover {
+        background-color: #778a2b;
+        border-color: #778a2b;
+      }
+
+      .FeaturedEvent-img img {
+        position: relative;
+        left: 10px;
+        width: 590px;
+        height: 480px;
+        box-shadow: -10px 10px 1px #dd540421;
+      }
+
+      .EventsList-section {
+        background: #ffffff;
+        padding: 60px 8%;
+      }
+
+      .EventsList-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .EventList-card {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #ddd;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        gap: 20px;
+      }
+
+      .EventList-date {
+        color: #ec5628;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        width: 200px;
+      }
+
+      .EventList-description {
+        flex: 1;
+      }
+
+      .EventList-description h3 {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "EB Garamond", serif;
+        margin: 0 0 5px;
+      }
+
+      .EventList-description p {
+        font-size: 14px;
+        color: #555;
+      }
+
+      .EventList-avatars {
+        display: flex;
+        justify-content: flex-start;
+        gap: 11px;
+        margin-right: 270px;
+      }
+
+      .EventList-avatars img {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .EventList-btn {
+        background: none;
+        border: none;
+        color: #9caf50;
+        font-weight: bold;
+        font-size: 12px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-right: 13px;
+      }
+
+      .EventList-btn:hover {
+        text-decoration: underline;
+      }
+
+      .see-more-btn {
+        position: relative;
+        margin-left: 525px;
+        background: #ffffff;
+        border: 1px solid #9caf50;
+        color: #9caf50;
+        padding: 5px 20px;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .see-more-btn:hover {
+        background-color: #6f843e1c;
+        border-color: #6f843e;
+      }
     </style>
   </head>
 
@@ -841,7 +1098,11 @@
           <h1>Union with Christ</h1>
           <p>New Book by Sinclair Ferguson</p>
           <div class="Author">
-            <img src="./src/images/sinclair.png" alt="Author" width="24" />
+            <img
+              src="./src/images/FergusonSinclair.png"
+              alt="Ferguson Sinclair"
+              width="24"
+            />
             Sinclair Ferguson • 163 Pages
           </div>
           <button class="btn-book-order">ORDER TODAY</button>
@@ -897,7 +1158,7 @@
       <hr />
       <br />
 
-      <section class="TrendingAndRecent-sectino">
+      <section class="TrendingAndRecent-section">
         <div class="trending">
           <div class="TAR-header">
             <h3><span>Trending</span></h3>
@@ -1115,7 +1376,148 @@
         </div>
       </section>
 
-      <section class="Store-section"></section>
+      <section class="Promo-section">
+        <div class="Promo-container">
+          <div class="Promo-img">
+            <img src="./src/images/promo-image.png" alt="Promotional image" />
+          </div>
+          <div class="Promo-card">
+            <p class="Promo-subtitle">
+              THE TEACHING FELLOWSHIP FOUNDED BY R.C. SPROUL
+            </p>
+            <h2 class="Promo-title">Our Mission</h2>
+            <p class="Promo-description">
+              Ligonier Ministries exists to proclaim, teach, and <br />
+              defend the holiness of God in all its fullness to as <br />
+              many people as possible. We support the church <br />
+              by providing trustworthy teaching to help <br />
+              Christians know what they believe, why they <br />
+              believe it, how to live it, and how to share it.
+            </p>
+            <button class="Promo-btn">READ ABOUT LIGONIER</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="FeaturedEvent-section">
+        <div class="FeaturedEvent-container">
+          <div class="FeaturedEvent-card">
+            <p class="FeaturedEvent-subtitle">FEATURED EVENT</p>
+            <h2 class="FeaturedEvent-title">
+              2026 National <br />
+              Conference
+            </h2>
+
+            <div class="FeaturedEvent-avatars">
+              <img src="./src/images/ericbancroft.png" alt="Eric Bancroft" />
+              <img src="./src/images/voddiebaucham.png" alt="Voddie Baucham" />
+              <img src="./src/images/HBCharlesJR.png" alt="H.B Charles Jr." />
+              <img
+                src="./src/images/FergusonSinclair.png"
+                alt="Sinclair Ferguson"
+              />
+              <img src="./src/images/garnerdavid.jpg" alt="David Garner" />
+              <img
+                src="./src/images/GodfreyRobert.png"
+                alt="W. Robert Godfrey"
+              />
+              <img src="./src/images/JonesKen.png" alt="Ken Jones" />
+              <img
+                src="./src/images/NicholsStephen.png"
+                alt="Stephen Nichols"
+              />
+              <span class="FeaturedEvent-more">+3</span>
+            </div>
+
+            <p class="FeaturedEvent-date">April 9 - 11, 2026</p>
+
+            <button class="FeaturedEvent-btn">LEARN MORE</button>
+          </div>
+
+          <div class="FeaturedEvent-img">
+            <img src="./src/images/featevent.jpg" alt="Featured Event image" />
+          </div>
+        </div>
+      </section>
+
+      <section class="EventsList-section">
+        <div class="EventsList-container">
+          <div class="EventList-card">
+            <div class="EventList-date">AUGUST 2, 2025</div>
+            <div class="EventList-description">
+              <h3>Always Ready: New England 2025</h3>
+              <p>Portland, ME, USA</p>
+            </div>
+            <div class="EventList-avatars">
+              <img
+                src="./src/images/NicholsStephen.png"
+                alt="Stephen Nichols"
+              />
+              <img
+                src="./src/images/binghamnathan.jpg"
+                alt="Nathan W. Bingham"
+              />
+              <img src="./src/images/ericbancroft.png" alt="Eric Bancroft" />
+              <img
+                src="./src/images/FergusonSinclair.png"
+                alt="Sinclair Ferguson"
+              />
+            </div>
+            <button class="EventList-btn">LEARN MORE</button>
+          </div>
+
+          <div class="EventList-card">
+            <div class="EventList-date">SEPTEMBER 19 - 20, 2025</div>
+            <div class="EventList-description">
+              <h3>2025 Southeast Asia Conference</h3>
+            </div>
+            <div class="EventList-avatars">
+              <img
+                src="./src/images/FergusonSinclair.png"
+                alt="Sinclair Ferguson"
+              />
+              <img src="./src/images/kimjoel.jpg" alt="Joel Kim" />
+              <img src="./src/images/ReevesMichael.png" alt="Michael Reeves" />
+              <img
+                src="./src/images/ChristopherChia.jpg"
+                alt="Christopher Chia"
+              />
+            </div>
+            <button class="EventList-btn">LEARN MORE</button>
+          </div>
+
+          <div class="EventList-card">
+            <div class="EventList-date">SEPTEMBER 25, 2025</div>
+            <div class="EventList-description">
+              <h3>Renewing Your Mind Live: Melbourne</h3>
+              <p>Melbourne, Australia</p>
+            </div>
+            <div class="EventList-avatars">
+              <img
+                src="./src/images/binghamnathan.jpg"
+                alt="Nathan W. Bingham"
+              />
+              <img
+                src="./src/images/FergusonSinclair.png"
+                alt="Sinclair Ferguson"
+              />
+              <img
+                src="./src/images/FergusonSinclair.png"
+                alt="Sinclair Ferguson"
+              />
+              <img
+                src="./src/images/FergusonSinclair.png"
+                alt="Sinclair Ferguson"
+              />
+            </div>
+            <button class="EventList-btn">LEARN MORE</button>
+          </div>
+
+          <div class="EventsList-see-more">
+            <button class="see-more-btn">SEE MORE EVENTS</button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script>
