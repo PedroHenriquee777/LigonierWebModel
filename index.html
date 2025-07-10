@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
+    <User-info charset="UTF-8" />
+    <User-info
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <User-info
       name="description"
       content="Ligonier - People are searching for truth. Help them find God’s Word."
     />
@@ -49,25 +52,25 @@
       }
 
       header.scrolled .nav-item a,
-      header.scrolled .btn-default,
+      header.scrolled .btn-header,
       header.scrolled .icon-user {
         color: #6f843e;
         border-color: #6f843e;
       }
 
-      header.scrolled .btn-default:hover {
+      header.scrolled .btn-header:hover {
         background-color: #f0f0f0;
         color: #000;
         border-color: #ccc;
       }
 
-      .header-container {
+      .Header-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
       }
 
-      .header-left {
+      .Header-left {
         position: relative;
         right: 100px;
         display: flex;
@@ -75,7 +78,7 @@
         gap: 5px;
       }
 
-      .header-right {
+      .Header-right {
         position: relative;
         left: 90px;
         display: flex;
@@ -83,7 +86,7 @@
         gap: 5px;
       }
 
-      .header-center {
+      .Header-center {
         flex: 1;
         display: flex;
         justify-content: center;
@@ -112,12 +115,7 @@
         cursor: pointer;
       }
 
-      .LogoSign {
-        width: 32px;
-        cursor: pointer;
-      }
-
-      .btn-default {
+      .btn-header {
         margin-right: 18px;
         background-color: transparent;
         color: white;
@@ -127,7 +125,7 @@
         transition: all 0.3s ease;
       }
 
-      .btn-default2 {
+      .btn-header2 {
         margin-left: 20px;
         background-color: #ec5628;
         color: white;
@@ -139,13 +137,13 @@
         border-radius: 2px;
       }
 
-      .btn-default:hover {
+      .btn-header:hover {
         background-color: rgba(255, 255, 255, 0.363);
         color: rgba(255, 255, 255, 0.774);
         border-color: rgba(255, 255, 255, 0.445);
       }
 
-      .hero {
+      .Hero-section {
         background: #76968a;
         padding: 300px 8%;
         position: relative;
@@ -252,79 +250,10 @@
         pointer-events: none;
       }
 
-      .book-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #f7f2e4;
-        padding: 1px 2%;
-      }
-
-      .book-image {
-        width: 500px;
-        position: relative;
-        height: auto;
-        margin-right: 20px;
-      }
-
-      .book-info {
-        max-width: 500px;
-        margin-right: 200px;
-      }
-
-      .book-info small {
-        text-transform: uppercase;
-        color: #ec6a4e;
-        font-weight: 300;
-      }
-
-      .book-info h1 {
-        font-size: 36px;
-        font-family: "EB Garamond";
-        margin: 10px 0;
-      }
-
-      .book-info .author {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin: 10px 0;
-        font-size: 15px;
-        color: #555;
-      }
-
-      .book-info .price {
-        margin-top: 16px;
-        position: relative;
-        margin-left: 160px;
-        bottom: 45px;
-        font-size: 14px;
-        color: #555;
-      }
-
-      .book-info .price del {
-        color: #999;
-        margin-right: 10px;
-      }
-
-      .book-info .btn-order {
-        margin-top: 20px;
-        padding: 10px 24px;
-        background-color: #9caf50;
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-weight: bold;
-        transition: background 0.3s;
-      }
-
-      .book-info .btn-order:hover {
-        background-color: #839641;
-      }
-
       .featured-section {
         background-color: #ffffff;
         padding: 60px 8%;
+        padding-bottom: 60px;
       }
 
       .featured-title {
@@ -371,9 +300,10 @@
         font-weight: 600;
         color: #333;
         margin-bottom: 10px;
+        text-align: center;
       }
 
-      .meta {
+      .User-info {
         display: flex;
         align-items: center;
         gap: 6px;
@@ -381,25 +311,443 @@
         color: #666;
       }
 
-      .meta img {
+      .User-info img {
         width: 24px;
         height: 24px;
         border-radius: 50%;
       }
+
+      .Book-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f2e4;
+        padding: 1px 2%;
+        margin-top: 60px;
+      }
+
+      .book-image {
+        width: 500px;
+        position: relative;
+        height: auto;
+        margin-right: 20px;
+      }
+
+      .Book-info {
+        max-width: 500px;
+        margin-right: 200px;
+      }
+
+      .Book-info small {
+        text-transform: uppercase;
+        color: #ec6a4e;
+        font-weight: 300;
+      }
+
+      .Book-info h1 {
+        font-size: 36px;
+        font-family: "EB Garamond";
+        margin: 10px 0;
+      }
+
+      .Book-info .Author {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 10px 0;
+        font-size: 15px;
+        color: #555;
+      }
+
+      .Book-info .Book-price {
+        margin-top: 16px;
+        position: relative;
+        margin-left: 160px;
+        bottom: 45px;
+        font-size: 14px;
+        color: #555;
+      }
+
+      .Book-info .Book-price del {
+        color: #999;
+        margin-right: 10px;
+      }
+
+      .Book-info .btn-book-order {
+        margin-top: 20px;
+        padding: 10px 24px;
+        background-color: #9caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+
+      .Book-info .btn-book-order:hover {
+        background-color: #839641;
+      }
+
+      .featured-section {
+        background-color: #ffffff;
+        padding: 60px 8%;
+        padding-bottom: 60px;
+      }
+
+      .featured-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        border-left: 3px solid #6f843e;
+        padding-left: 10px;
+        letter-spacing: 1px;
+      }
+
+      .featured-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 30px;
+      }
+
+      .featured-card {
+        background-color: #fff;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease;
+        cursor: pointer;
+      }
+
+      .featured-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 5px 5px 15px #cfcfcfde;
+        transition: box-shadow 0.3s ease;
+      }
+
+      .featured-card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+      }
+
+      .featured-info {
+        padding: 16px;
+      }
+
+      .featured-info h3 {
+        font-size: 15px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 10px;
+        font-family: "EB Garamond";
+      }
+
+      .User-info {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 13px;
+        color: #666;
+      }
+
+      .User-info img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+      }
+
+      hr {
+        border: none;
+        border-top: 2px solid #e6dada80;
+        margin: 20px 0;
+      }
+
+      .TrendingAndRecent-sectino {
+        display: flex;
+        gap: 80px;
+        justify-content: space-between;
+        padding: 40px 8%;
+        background-color: #fff;
+        flex-wrap: wrap;
+        font-family: "Noto Sans Georgian";
+      }
+
+      .trending {
+        position: relative;
+        gap: 40px;
+        left: 200px;
+      }
+
+      .recent {
+        gap: 40px;
+        position: relative;
+        right: 200px;
+      }
+
+      .TAR-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+      }
+
+      .TAR-header span {
+        color: #000000;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-left: 3px solid #6f843e;
+        padding-left: 8px;
+      }
+
+      .TAR-subtitle {
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .divider {
+        width: 1px;
+        background-color: #ddd;
+        height: auto;
+        margin: 0 2px;
+      }
+
+      @media (max-width: 768px) {
+        .TrendingAndRecent-sectino {
+          flex-direction: column;
+        }
+
+        .divider {
+          display: none;
+        }
+      }
+
+      .TAR-list {
+        padding-left: 0;
+        cursor: pointer;
+        list-style: none;
+      }
+
+      .TAR-list li:hover {
+        background-color: #fcbf9634;
+      }
+
+      .TAR-list li {
+        position: relative;
+        padding-left: 40px;
+        margin-bottom: 16px;
+        font-size: 14px;
+        line-height: 1.5;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 12px;
+      }
+
+      .TAR-list article strong {
+        font-weight: 600;
+        color: #000;
+        letter-spacing: 0.3px;
+      }
+
+      .TAR-list article small {
+        color: #666;
+      }
+
+      .TAR-number {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: #c8c8c8;
+        font-family: "EB Garamond";
+      }
+
+      .TAR-list li:hover .TAR-number {
+        color: rgba(255, 68, 0, 0.774);
+      }
+      .TARSee-more {
+        position: relative;
+        left: 100px;
+        bottom: 1.5px;
+        font-size: 13px;
+        color: rgb(111, 132, 62);
+        text-decoration: none;
+      }
+
+      .TARSee-more:hover {
+        text-decoration: underline;
+      }
+
+      .fa-solid fa-chevron-right {
+        position: relative;
+        right: 100px;
+      }
+
+      .daily-text1 {
+        position: relative;
+        font-size: 12px;
+        top: 377px;
+        left: 90px;
+        font-weight: bold;
+        color: #c8c8c8;
+        font-family: "Noto Sans Georgian";
+      }
+
+      .daily-text2 {
+        position: relative;
+        font-size: 12px;
+        left: 408px;
+        top: 360px;
+        font-weight: bold;
+        color: #c8c8c8;
+        font-family: "Noto Sans Georgian";
+      }
+
+      .daily-text3 {
+        position: relative;
+        font-size: 12px;
+        top: 343px;
+        left: 700px;
+        font-weight: bold;
+        color: #c8c8c8;
+        font-family: "Noto Sans Georgian";
+      }
+
+      .daily-text4 {
+        position: relative;
+        font-size: 12px;
+        top: 328px;
+        left: 1025px;
+        font-weight: bold;
+        color: #c8c8c8;
+        font-family: "Noto Sans Georgian";
+      }
+
+      .Store-section {
+        padding: 60px 8%;
+        background: #fdfcf9;
+      }
+
+      .Store-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+      }
+
+      .Store-leftSide {
+        flex: 1;
+        position: relative;
+        top: 100px;
+        left: 60px;
+      }
+
+      .Store-subtilte {
+        font-size: 14px;
+        color: #888;
+        margin-bottom: 5px;
+      }
+
+      .Store-title {
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-family: "EB Garamond", serif;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+
+      .Store-description {
+        font-size: 17px;
+        font-family: "EB Garamond", serif;
+        font-weight: 400;
+        color: #444;
+        margin-bottom: 20px;
+      }
+
+      .store-btn {
+        padding: 8px 16px;
+        background: transparent;
+        border: 1px solid #6f843e;
+        color: #6f843e;
+        cursor: pointer;
+        font-size: 13px;
+        transition: 0.3s ease;
+      }
+
+      .store-btn:hover {
+        background-color: #6f843e1c;
+        border-color: #6f843e;
+      }
+
+      .Store-rightSide {
+        flex: 3;
+        display: flex;
+        gap: 90px;
+        flex-wrap: wrap;
+      }
+
+      .product-card {
+        text-align: center;
+        max-width: 200px;
+      }
+
+      .product-type {
+        font-size: 13px;
+        color: #888;
+        margin-bottom: 5px;
+      }
+
+      .product-card img {
+        width: 100%;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+      }
+
+      .product-Author {
+        font-size: 13px;
+        color: #6f843e;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .product-title {
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 5px;
+        cursor: pointer;
+      }
+
+      .product-title:hover {
+        color: #6f843e;
+      }
+
+      .product-price {
+        font-size: 14px;
+        color: #333;
+      }
+
+      .product-price del {
+        color: #aaa;
+        margin-right: 6px;
+      }
     </style>
   </head>
+
   <body>
     <header>
-      <div class="header-container">
-        <div class="header-left">
-          <button class="btn-default"><strong>MENU</strong></button>
+      <div class="Header-container">
+        <div class="Header-left">
+          <button class="btn-header"><strong>MENU</strong></button>
           <img
             src="./src/images/tree-svgrepo-com.svg"
             alt="LigonierIcon"
             class="logoicon"
           />
         </div>
-        <nav class="header-center">
+        <nav class="Header-center">
           <ul id="nav-list">
             <li class="nav-item"><a href="#">TEACHING</a></li>
             <li class="nav-item"><a href="#">EVENTS</a></li>
@@ -407,15 +755,15 @@
             <li class="nav-item"><a href="#">ABOUT</a></li>
           </ul>
         </nav>
-        <div class="header-right">
+        <div class="Header-right">
           <i class="fa-regular fa-user icon-user" style="color: white"></i>
-          <button class="btn-default2"><strong>DONATE</strong></button>
+          <button class="btn-header2"><strong>DONATE</strong></button>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="Hero-section">
         <div class="polaroid">
           <img src="./src/images/LigonierImage.jpg" alt="LigonierImage" />
         </div>
@@ -436,72 +784,338 @@
         </div>
       </section>
 
-      <section class="book-section">
+      <section class="featured-section">
+        <h2 class="featured-title">For You</h2>
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="./src/images/fy1.jpeg" alt="Featured-image" />
+            <div class="featured-info">
+              <h3>The Transform Power of God's Holiness in Everyday Life</h3>
+              <div class="User-info">
+                <img src="./src/images/fy1.jpeg" alt="Chris Larson" />
+                <span>Chris Larson</span> • <span>3min</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card">
+            <img src="./src/images/fy2.jpg" alt="Bible Curriculum" />
+            <div class="featured-info">
+              <h3>The Transform Power of God's Holiness in Everyday Life</h3>
+              <div class="User-info">
+                <span>Ligonier Updates</span> • <span>2min</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card">
+            <img src="./src/images/fy3.jpg" alt="Following Jesus" />
+            <div class="featured-info">
+              <h3>Contemporary Challenges to Christian Soteriology</h3>
+              <div class="User-info">
+                <span>Ligonier Updates</span> • <span>2min</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card">
+            <img src="./src/images/fy4.jpg" alt="God Holiness" />
+            <div class="featured-info">
+              <h3>
+                God’s Holy Love: Finding Assurance in Both His Justice and
+                Compassion
+              </h3>
+              <div class="User-info">
+                <span>Ligonier Updates</span> • <span>2min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Book-section">
         <img
           src="./src/images/book.png"
           alt="Union with Christ Book"
           class="book-image"
         />
-        <div class="book-info">
+        <div class="Book-info">
           <small>Hardcover</small>
           <h1>Union with Christ</h1>
           <p>New Book by Sinclair Ferguson</p>
-          <div class="author">
+          <div class="Author">
             <img src="./src/images/sinclair.png" alt="Author" width="24" />
             Sinclair Ferguson • 163 Pages
           </div>
-          <button class="btn-order">ORDER TODAY</button>
-          <div class="price"><del>$18.00</del><span>$14.40</span></div>
+          <button class="btn-book-order">ORDER TODAY</button>
+          <div class="Book-price"><del>$18.00</del><span>$14.40</span></div>
         </div>
       </section>
-      
+
       <section class="featured-section">
         <h2 class="featured-title">Featured</h2>
         <div class="featured-grid">
           <div class="featured-card">
-            <img src="./src/images/feat2.jpg" alt="Quote image" />
+            <img src="./src/images/feat2.jpg" alt="Featured-image" />
             <div class="featured-info">
               <h3>Help Equip Christians in the Battle of Ideas</h3>
-              <div class="meta">
+              <div class="User-info">
                 <img src="./src/images/feat2.jpg" alt="Chris Larson" />
                 <span>Chris Larson</span> • <span>3min</span>
               </div>
             </div>
           </div>
-
           <div class="featured-card">
             <img src="./src/images/feat1.jpg" alt="Bible Curriculum" />
             <div class="featured-info">
               <h3>New Bible Curriculum for Children: Growing in God’s Word</h3>
-              <div class="meta">
+              <div class="User-info">
                 <span>Ligonier Updates</span> • <span>2min</span>
               </div>
             </div>
           </div>
-
           <div class="featured-card">
             <img src="./src/images/feat3.jpg" alt="Following Jesus" />
             <div class="featured-info">
               <h3>
                 Following Jesus: New Teaching Series from W. Robert Godfrey
               </h3>
-              <div class="meta">
+              <div class="User-info">
                 <span>Ligonier Updates</span> • <span>2min</span>
               </div>
             </div>
           </div>
-
           <div class="featured-card">
             <img src="./src/images/feat4.jpg" alt="National Conference" />
             <div class="featured-info">
               <h3>Announcing Our 2026 National Conference</h3>
-              <div class="meta">
+              <div class="User-info">
                 <span>Ligonier Updates</span> • <span>2min</span>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <hr />
+      <br />
+
+      <section class="TrendingAndRecent-sectino">
+        <div class="trending">
+          <div class="TAR-header">
+            <h3><span>Trending</span></h3>
+          </div>
+          <p class="TAR-subtitle">See what other people are studying.</p>
+          <ol class="TAR-list">
+            <li>
+              <article>
+                <strong
+                  ><span class="TAR-number">1</span>What Is
+                  Transgenderism?</strong
+                ><br />
+                <small>Rosaria Butterfield &nbsp; | &nbsp; 5min</small>
+              </article>
+            </li>
+            <li>
+              <article>
+                <strong
+                  ><span class="TAR-number">2</span>3 Things You Should Know
+                  about Galati...</strong
+                ><br />
+                <small>Thomas Schreiner &nbsp; | &nbsp; 3min</small>
+              </article>
+            </li>
+            <li>
+              <article>
+                <strong
+                  ><span class="TAR-number">3</span>Is Seminary Worth the
+                  Cost?</strong
+                ><br />
+                <small>Guy Richard &nbsp; | &nbsp; 3min</small>
+              </article>
+            </li>
+            <li>
+              <article>
+                <strong
+                  ><span class="TAR-number">4</span>What Is the Bondage of the
+                  Will?</strong
+                ><br />
+                <small>Nicholas Needham &nbsp; | &nbsp; 4min</small>
+              </article>
+            </li>
+            <li>
+              <article>
+                <strong
+                  ><span class="TAR-number">5</span>5 Things You Should Know
+                  about Marti...</strong
+                ><br />
+                <small>Stephen Nichols &nbsp; | &nbsp; 4min</small>
+              </article>
+            </li>
+          </ol>
+        </div>
+        <div class="divider"></div>
+        <div class="recent">
+          <div class="TAR-header">
+            <h3><span>Recent</span></h3>
+            <a href="#" class="TARSee-more">See More</a>
+            <i
+              class="fa-solid fa-chevron-right fa-2xs fa-text-decoration: underline;"
+              style="color: #6f843e"
+            ></i>
+          </div>
+          <p class="TAR-subtitle">Explore our latest resources and updates.</p>
+          <ol class="TAR-list">
+            <li>
+              <article>
+                <strong
+                  ><span class="TAR-number">1</span>The Witness of
+                  Matthew</strong
+                ><br />
+                <small>R.C. Sproul &nbsp; | &nbsp; 4min</small>
+              </article>
+            </li>
+            <li>
+              <article>
+                <strong
+                  ><span class="TAR-number">2</span>Union with Christ: New Book
+                  by Sinclair...</strong
+                ><br />
+                <small>Ligonier Updates &nbsp; | &nbsp; 2min</small>
+              </article>
+            </li>
+            <li>
+              <article>
+                <strong
+                  ><span class="TAR-number">3</span>How Can the Church Care for
+                  Its Disabl...</strong
+                ><br />
+                <small>John Kwasny &nbsp; | &nbsp; 4min</small>
+              </article>
+            </li>
+            <li>
+              <article>
+                <strong
+                  ><span class="TAR-number">4</span>Is the Church Full of
+                  Hypocrites?</strong
+                ><br />
+                <small>R.C. Sproul &nbsp; | &nbsp; 3min</small>
+              </article>
+            </li>
+            <li>
+              <article>
+                <strong
+                  ><span class="TAR-number">5</span>Contemporary Challenges to
+                  Christian S...</strong
+                ><br />
+                <small>Keith Mathison &nbsp; | &nbsp; 4min</small>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <hr />
+
+      <section class="featured-section">
+        <h4 class="daily-text1">Daily Audio</h4>
+        <h4 class="daily-text2">Daily Video</h4>
+        <h4 class="daily-text3">Daily Devotional</h4>
+        <h4 class="daily-text4">Daily Audio</h4>
+
+        <h2 class="featured-title">DAILY RESOURCES</h2>
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img
+              src="./src/images/renewing-your-mind.jpg"
+              alt="Featured-image"
+            />
+            <div class="featured-info">
+              <h3>Renewing Your Mind</h3>
+              <div class="User-info">
+                <img src="./src/images/Promise-keeper.jpg" alt="Chris Larson" />
+                <span>Chris Larson</span> • <span>3min</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card">
+            <img src="./src/images/Promise-keeper.jpg" alt="Bible Curriculum" />
+            <div class="featured-info">
+              <h3>Creation Covenant (Part 1)</h3>
+              <div class="User-info">
+                <img src="./src/images/Promise-keeper.jpg" alt="Chris Larson" />
+                <span>R.C. SPROUL</span> • <span>3min</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card">
+            <img src="./src/images/feat3.jpg" alt="Following Jesus" />
+            <div class="featured-info">
+              <h3>Facing Double Jeopardy</h3>
+              <div class="User-info">
+                <img src="./src/images/Promise-keeper.jpg" alt="Chris Larson" />
+                <span>1 PETER 5:8</span> • <span>3min</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card">
+            <img src="./src/images/Ligonierapp.jpg" alt="National Conference" />
+            <div class="featured-info">
+              <h3>Get the Ligonier App</h3>
+              <div class="User-info">
+                <img src="./src/images/Promise-keeper.jpg" alt="Chris Larson" />
+                <span>Download the app now!</span> • <span>3min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Store-section">
+        <div class="Store-container">
+          <div class="Store-leftSide">
+            <p class="Store-subtilte">Recommended Resources</p>
+            <h2 class="Store-title">From the Store</h2>
+            <p class="Store-description">
+              You may be interested in <br />
+              these resources.
+            </p>
+            <button class="store-btn">VIEW ALL</button>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="Store-rightSide">
+            <div class="product-card">
+              <p class="product-type">Hardcover</p>
+              <img src="./src/images/honorofgod.jpg" alt="Book 1" />
+              <p class="product-Author">Grant Castleberry</p>
+              <h3 class="product-title">The Honor of God</h3>
+              <p class="product-price"><del>$20.00</del> $16.00</p>
+            </div>
+
+            <div class="product-card">
+              <p class="product-type">Hardcover</p>
+              <img src="./src/images/bondage.jpg" alt="Book 2" />
+              <p class="product-Author">Martin Luther</p>
+              <h3 class="product-title">
+                The Bondage of the <br />
+                Will
+              </h3>
+              <p class="product-price"><del>$21.00</del> $16.80</p>
+            </div>
+
+            <div class="product-card">
+              <p class="product-type">DVD</p>
+              <img src="./src/images/signed.jpg" alt="DVD" />
+              <p class="product-Author">J.V. Fesko</p>
+              <h3 class="product-title">
+                Signed, Sealed, <br />
+                Delivered
+              </h3>
+              <p class="product-price"><del>$30.00</del> $24.00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Store-section"></section>
     </main>
 
     <script>

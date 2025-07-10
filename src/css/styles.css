@@ -1,0 +1,10 @@
+      .featured-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #6f843e;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        border-left: 3px solid #6f843e;
+        padding-left: 10px;
+        letter-spacing: 1px;
+      }
