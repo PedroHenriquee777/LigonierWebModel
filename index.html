@@ -1001,6 +1001,89 @@
         background-color: #6f843e1c;
         border-color: #6f843e;
       }
+
+      .Donate-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #4c635b;
+        padding: 60px 5%;
+        flex-wrap: wrap;
+      }
+
+      .Donate-image {
+        width: 220px;
+        height: auto;
+        box-shadow: 6px 6px 0 #677b73;
+        margin-right: 40px;
+      }
+
+      .Donate-info {
+        max-width: 800px;
+        margin-bottom: 100px;
+        color: #fff;
+        text-align: center;
+      }
+
+      .Donate-info h2 {
+        margin-bottom: 40px;
+      }
+
+      .Donate-title {
+        font-family: "EB Garamond", serif;
+        font-size: 35px;
+      }
+
+      .Donate-Cards {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        flex-wrap: wrap;
+        text-align: left;
+      }
+
+      .Donate-card {
+        max-width: 300px;
+        position: relative;
+        top: 35px;
+      }
+
+      .Donate-icon {
+        font-size: 25px;
+        color: #ec5628;
+        margin-right: 10px;
+      }
+
+      .Donate-card h3 {
+        display: inline;
+        line-height: 10px;
+        font-size: 20px;
+        color: #fff;
+      }
+
+      .Donate-card p {
+        font-size: 16px;
+        padding-top: 10px;
+        margin: 10px 0 20px;
+        line-height: 1.5;
+        color: #fff;
+      }
+
+      .btn-Donate-order {
+        background-color: #9caf50;
+        color: white;
+        border: none;
+        padding: 10px 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+        font-size: 13px;
+      }
+
+      .btn-Donate-order:hover {
+        background-color: #778a2b;
+        border-color: #778a2b;
+      }
     </style>
   </head>
 
@@ -1526,6 +1609,40 @@
 
           <div class="EventsList-see-more">
             <button class="see-more-btn">SEE MORE EVENTS</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="Donate-section">
+        <img
+          src="./src/images/InternationalBibles.jpg"
+          alt="Union with Christ Book"
+          class="Donate-image"
+        />
+
+        <div class="Donate-info">
+          <h2 class="Donate-title">You Can Make a Difference</h2>
+
+          <div class="Donate-Cards">
+            <div class="Donate-card">
+              <i class="fa-solid fa-globe fa-2xs" style="color: #ec5628"></i>
+              <h3>Join Thousands, Reach Millions</h3>
+              <p>
+                Be a theological lifeline for Christians through your monthly
+                gift.
+              </p>
+              <button class="btn-Donate-order">GIVE MONTHLY</button>
+            </div>
+
+            <div class="Donate-card">
+              <i
+                class="fa-solid fa-hands-holding-child fa-2xs"
+                style="color: #ec5628"
+              ></i>
+              <h3>Support Ligonier’s Global Mission</h3>
+              <p>Your generosity fuels gospel outreach around the world.</p>
+              <button class="btn-Donate-order">ONE-TIME GIFT</button>
+            </div>
           </div>
         </div>
       </section>
