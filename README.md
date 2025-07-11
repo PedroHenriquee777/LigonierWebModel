@@ -70,7 +70,16 @@ LIGONIER/
 ## 🔧 Features
 
 * Header
-* Hero section (unfinished)
+* Hero section
+* Search bar and For You section
+* Promotional Book section
+* Featured section
+* Trending / Recent section
+* Daily Resources section
+* Store of Books section
+* The mission of Ligonier's section
+* Upcoming Ligonier events
+  
 
 ---
 
@@ -87,8 +96,7 @@ Content inspired by:
 ## 💡 Future Enhancements
 
 * Responsive navigation with mobile menu toggle
-* Hero section with mission statement and CTA
-* Cards for featured content (podcasts, magazine, courses)
+* Footer section
 * Contact form (markup only)
 * Form validation with JavaScript
 * Smooth animations and hover effects
