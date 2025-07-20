@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap");
-
+/*
+  ======= RESET E BASE =======
+  Define fonte padrão, remove margens/paddings e usa box-sizing para facilitar o controle do layout.
+*/
 * {
   font-family: "Noto Sans Georgian", "EB Garamond", sans-serif;
   margin: 0;
@@ -8,20 +11,32 @@
   box-sizing: border-box;
 }
 
+/*
+  ======= BODY =======
+  Fundo branco
+*/
 body {
   background-color: #ffffff;
   overflow-x: hidden;
 }
 
+/*
+  ======= HEADER =======
+  Header sticky no topo, com fundo colorido.
+*/
 header {
   width: 100%;
   padding: 10px 8%;
   background: #76968a;
   z-index: 1000;
-  position:sticky;
+  position: sticky;
   top: 0;
 }
 
+/*
+  ======= HEADER SCROLLED =======
+  Estilização para o header após a rolagem da página
+*/
 header.scrolled {
   background-color: #ffffff;
   transition: background-color 0.3s ease;
@@ -41,12 +56,20 @@ header.scrolled .btn-header:hover {
   border-color: #6f843e;
 }
 
+/*
+  ======= HEADER CONTAINER =======
+  Flexbox para alinhar logo, menu e botões.
+*/
 .Header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+/*
+  ======= HEADER CENTRO E LADOS =======
+  Garante largura total e alinhamento dos lados.
+*/
 .Header-left {
   position: relative;
   right: 100px;
@@ -69,6 +92,10 @@ header.scrolled .btn-header:hover {
   justify-content: center;
 }
 
+/*
+  ======= NAVBAR =======
+  NavBar com links no header.
+*/
 #nav-list {
   display: flex;
   list-style: none;
@@ -92,6 +119,10 @@ header.scrolled .btn-header:hover {
   cursor: pointer;
 }
 
+/*
+  ======= BOTÕES HEADER =======
+  Estiliza botões no header
+*/
 .btn-header {
   margin-right: 18px;
   background-color: transparent;
@@ -120,6 +151,10 @@ header.scrolled .btn-header:hover {
   border-color: rgba(255, 255, 255, 0.445);
 }
 
+/*
+  ======= HERO =======
+  Estilização do polaroid, texto principal, botões e fundo verde
+*/
 .Hero-section {
   background: #76968a;
   padding: 300px 8%;
@@ -182,6 +217,10 @@ header.scrolled .btn-header:hover {
   color: #76968a;
 }
 
+/*
+  ======= ANIMAÇÃO =======
+  Animação para o btn-header2 pulsar.
+*/
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -194,6 +233,10 @@ header.scrolled .btn-header:hover {
   }
 }
 
+/*
+  ======= SEARCH BAR =======
+  Barra de pesquisa (apenas estilização, não funcional)
+*/
 .search-section {
   display: flex;
   justify-content: center;
@@ -228,6 +271,10 @@ header.scrolled .btn-header:hover {
   pointer-events: none;
 }
 
+/*
+  ======= FOR YOU =======
+  Seção de For You do site (tem nome de featured pois é a mesma estilização)
+*/
 .featured-section {
   background-color: #ffffff;
   padding: 60px 8%;
@@ -295,6 +342,10 @@ header.scrolled .btn-header:hover {
   border-radius: 50%;
 }
 
+/*
+  ======= BOOK =======
+  Seção do livro promocional
+*/
 .Book-section {
   display: flex;
   justify-content: center;
@@ -365,6 +416,11 @@ header.scrolled .btn-header:hover {
 .Book-info .btn-book-order:hover {
   background-color: #839641;
 }
+
+/*
+  ======= FEATURED =======
+  Seção de featured (apresenta a mesma estrutura do for you pois a estilização é a mesma)
+*/
 
 .featured-section {
   background-color: #ffffff;
@@ -442,6 +498,10 @@ hr {
   margin: 20px 0;
 }
 
+/*
+  ======= TRENDING-AND-RECENT =======
+  Seção de artigos em alta e recentes, divididos em header, simplificados por "TAR"
+*/
 .TrendingAndRecent-section {
   display: flex;
   gap: 80px;
@@ -493,6 +553,10 @@ hr {
   margin: 0 2px;
 }
 
+/*
+  ======= TRENDING-AND-RECENT =======
+  Responsividade do TAR section
+*/
 @media (max-width: 768px) {
   .TrendingAndRecent-section {
     flex-direction: column;
@@ -564,6 +628,11 @@ hr {
   right: 100px;
 }
 
+
+/*
+  ======= DAILY RESOURCES =======
+  Estilização para artigos diários oferecidos
+*/
 .daily-text1 {
   position: relative;
   font-size: 12px;
@@ -604,6 +673,11 @@ hr {
   font-family: "Noto Sans Georgian";
 }
 
+
+/*
+  ======= STORE =======
+  Seção de loja, onde são promovido produtos  
+*/
 .Store-section {
   padding: 60px 8%;
   background: #fdfcf9;
@@ -712,6 +786,11 @@ hr {
   margin-right: 6px;
 }
 
+
+/*
+  ======= PROMOTIONAL =======
+  estilização para a seção promocional a cerca do Ligonier
+*/
 .Promo-section {
   padding: 60px 8%;
   background: #ffffff;
@@ -788,6 +867,11 @@ hr {
   border-color: rgba#778a2b;
 }
 
+
+/*
+  ======= Featured-Event =======
+  Estilização para futuro evento
+*/
 .FeaturedEvent-section {
   background: #ffffff;
   padding: 60px 8%;
@@ -982,6 +1066,11 @@ hr {
   border-color: #6f843e;
 }
 
+
+/*
+  ======= DONATE =======
+  Estilização para seção onde é possivel se tornar doador
+*/
 .Donate-section {
   display: flex;
   align-items: center;
@@ -1065,6 +1154,11 @@ hr {
   border-color: #778a2b;
 }
 
+
+/*
+  ======= FOOTER =======
+  Estilização para o rodapé do site
+*/
 .footer-section {
   background: #fff;
   padding: 48px 0 0 0;
@@ -1183,6 +1277,11 @@ hr {
 .footer-icons a:hover {
   color: #6f843e;
 }
+
+/*
+  ======= PRÉ-FOOTER =======
+  Parte que antecede o footer
+*/
 .prefooter-section .footer-languages {
   margin-top: 18px;
   margin-bottom: 0;
@@ -1257,6 +1356,14 @@ hr {
   margin: 0 6px;
   font-weight: 400;
 }
+
+
+
+
+/*
+  ======= RESPONSIVIDADE =======
+  ÁREA SEPARADA APENAS PARA RESPONSIVIDADE NECESSÁRIA
+*/
 @media (max-width: 900px) {
   .footer-links {
     flex-direction: column;
@@ -1327,7 +1434,7 @@ hr {
     bottom: 30px;
   }
 
-  .footer-links-right{
+  .footer-links-right {
     position: relative;
     top: 20px;
     left: 60px;
