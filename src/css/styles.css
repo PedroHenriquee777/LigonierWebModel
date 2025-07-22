@@ -151,10 +151,13 @@ header.scrolled .btn-header:hover {
   border-color: rgba(255, 255, 255, 0.445);
 }
 
-/* ===== Dropdown Menu ===== */
+/*
+  ======= DROPDOWN MENU =======
+  Dropdown do botão menu
+*/
 .dropdown-menu {
   position: fixed;
-  top: 60px; /* altura do header, ajuste se necessário */
+  top: 60px;
   left: 0;
   width: 100vw;
   height: calc(100vh - 60px);
@@ -249,8 +252,6 @@ header.scrolled .btn-header:hover {
 .dropdown-close:hover {
   color: #ec5628;
 }
-
-
 
 /*
   ======= HERO =======
