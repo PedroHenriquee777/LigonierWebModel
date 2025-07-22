@@ -1653,12 +1653,12 @@ hr {
     font-family:"Noto Sans Georgian", serif;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px 24px;
+    gap: 10px 2px;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 400px;
     padding: 0;
   }
   .prefooter-section .footer-languages br {
@@ -1667,7 +1667,7 @@ hr {
   .prefooter-section .footer-languages span {
     grid-column: 1 / -1;
     margin-bottom: 10px;
-    margin-left: 160px;
+    margin-left: 115px;
     font-weight: bold;
     color: #888;
     text-align: center;
@@ -1801,7 +1801,7 @@ hr {
   .logoicon {
     margin: 0 auto;
     position: relative;
-    right: 35px;
+    right: 25px;
     bottom: 0;
     width: 36px;
   }
@@ -1830,7 +1830,7 @@ hr {
 
   .logoicon{
     position: relative;
-    right: 60px;
+    right: 50px;
   }
   .icon-user {
     font-size: 20px;
@@ -1964,7 +1964,7 @@ hr {
     text-align: start;
     font-size: 33px;
     bottom: 0;
-    right: 20px;
+    right: 15px;
     padding: 0;
   }
 
@@ -1972,17 +1972,16 @@ hr {
     text-align: start;
     font-size: 13px;
     bottom: 0;
-    right: 20px;
+    right: 15px;
     padding: 0;
   }
 
   .Promo-description {
     text-align: start;
-    font-size: 17px;
+    font-size: 1px;
     bottom: 0;
-
     padding: 0;
-    right: 20px;
+    right: 15px;
   }
 
   .Promo-description br {
@@ -1991,19 +1990,19 @@ hr {
 
   .Promo-card
   .Promo-subtitle{
-    font-size: 10px;
+    font-size: 8px;
     text-align: start;
     bottom: 0;
-    right: 20px;
+    right: 15px;
     padding: 0;
   }
   .Promo-btn {
     align-items: start;
-    width: 38%;
+    width: 35%;
     font-size: 13px;
     padding: 7px 0;
     bottom: 0;
-    margin-right: 70px ;
+    margin-right: 15px ;
   }
   .FeaturedEvent-container {
     flex-direction: column;
@@ -2012,7 +2011,7 @@ hr {
   .FeaturedEvent-card{
     position: relative;
     top: 390px;
-    right: 60px;
+    right: 15px;
   }
   .FeaturedEvent-img img {
     width: 100%;
