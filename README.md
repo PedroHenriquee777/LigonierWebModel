@@ -105,5 +105,5 @@ Content inspired by:
 
 ## 📄 License
 
-This project is licensed under the **MIT License**.
+This project was developed solely for educational, academic, and technical purposes, with no intention of commercial use or sale
 You’re free to use, modify, and distribute it for non-commercial learning purposes.
