@@ -79,6 +79,7 @@ LIGONIER/
 * Store of Books section
 * The mission of Ligonier's section
 * Upcoming Ligonier events
+* Footer Section
   
 
 ---
@@ -94,10 +95,6 @@ Content inspired by:
 ---
 
 ## 💡 Future Enhancements
-
-* Responsive navigation with mobile menu toggle
-* Footer section
-* Contact form (markup only)
 * Form validation with JavaScript
 * Smooth animations and hover effects
 
